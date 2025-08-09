@@ -1,0 +1,17 @@
+[project]
+name = "trovabando"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "aiohttp>=3.12.15",
+    "fastapi>=0.116.1",
+    "fastmcp>=2.3.2",
+    "httpx>=0.28.1",
+    "langchain-mcp-adapters>=0.1.9",
+    "langgraph>=0.6.4",
+    "mcp[cli]>=1.12.4",
+    "sse-starlette>=3.0.2",
+    "uvicorn[standard]>=0.35.0",
+]
