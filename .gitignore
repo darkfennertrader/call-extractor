@@ -1,6 +1,63 @@
-/__pycache__
-/app/__pycache__
-/venv
-.env
+# ─── 1) Python byte-code, caches, compiled extensions ───────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.pyd
+
+# ─── 2) Build / packaging artefacts ────────────────────────────────────────────
+build/
+dist/
+*.egg-info/
+.eggs/
+wheelhouse/
+pip-wheel-metadata/
+*.manifest
+*.spec
+
+# ─── 3) Virtual-environment & uv working folders ───────────────────────────────
 .venv/
+venv/
+env/
+ENV/
+.uv/                # if you used “uv venv”
+__pypackages__/     # PEP 582 local package store (used by uv run)
+
+# ─── 4) Dependency-resolver & test caches ──────────────────────────────────────
+.cache/
+.pytest_cache/
+.tox/
+.nox/
+coverage.*          # coverage data files
+htmlcov/
+.mypy_cache/
+.dmypy.json
+.pyright/
+
+# ─── 5) Editor / IDE settings ─────────────────────────────────────────────────-
 .vscode/
+.idea/
+*.suo
+*.njsproj
+*.sln
+*.sw?
+tags
+
+# ─── 6) Secrets, environment files, local configs ──────────────────────────────
+*.env
+.env.*
+.envrc
+*.ini        # if these contain machine-specific secrets
+*.toml       # same (except pyproject.toml which you DO commit)
+*.yaml
+*.yml
+
+# ─── 7) Logs, databases, runtime files ─────────────────────────────────────────
+*.log
+*.sqlite*
+*.db
+*.pid
+
+# ─── 8) OS / misc garbage ──────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
